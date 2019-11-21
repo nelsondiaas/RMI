@@ -10,12 +10,12 @@ import com.developer.rmi.interfaces.Calculator;
 
 public class Client {
     public static void main(final String args[]) throws MalformedURLException, NotBoundException {
-
+        
         try {
 
             Calculator calculator = (Calculator) Naming.lookup("rmi://localhost:3000/calculator");
 
-            System.out.println("\nEnter a number: ");
+            System.out.printf("\nEnter a number: ");
 
             Scanner input = new Scanner(System.in);
             long number = input.nextInt();
