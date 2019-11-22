@@ -7,6 +7,7 @@ import java.util.*;
 
 
 public class ChatServer {
+    
     private int port;
     private Set<String> userNames = new HashSet<>();
     private Set<UserThread> userThreads = new HashSet<>();
@@ -23,7 +24,7 @@ public class ChatServer {
             while (true) {
                 
                 Socket socket = serverSocket.accept();
-                System.out.println("New user connected");
+                System.out.println("\nNew user connected");
  
                 UserThread newUser = new UserThread(socket, this);
                 userThreads.add(newUser);

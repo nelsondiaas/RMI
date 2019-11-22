@@ -16,7 +16,7 @@ public class ReadThread extends Thread {
  
         try {
 
-            InputStream input = socket.getInputStream();
+            InputStream input = this.socket.getInputStream();
             reader = new BufferedReader(new InputStreamReader(input));
 
         } catch (IOException ex) {
