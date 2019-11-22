@@ -30,7 +30,7 @@ public class ReadThread extends Thread {
             try {
                 
                 String response = reader.readLine();
-                System.out.printf("\n" + response);
+                System.out.println("\n" + response);
                 
                 /* imprime o nome de usuário após exibir a mensagem do servidor */
                 

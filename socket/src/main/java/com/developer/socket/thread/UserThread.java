@@ -43,13 +43,15 @@ public class UserThread extends Thread {
             } while (!clientMessage.equals("bye"));
  
             server.removeUser(userName, this);
+
             socket.close();
- 
+            output.close();   
+            
             serverMessage = userName + " exited";
             server.broadcast(serverMessage, this);
  
         } catch (IOException ex) {
-            System.out.printf("\nError in UserThread: " + ex.getMessage());
+            System.out.println("\nError in UserThread: " + ex.getMessage());
             ex.printStackTrace();
         }
     }
@@ -59,9 +61,9 @@ public class UserThread extends Thread {
      */
     public void printUsers() {
         if (server.hasUsers()) {
-            writer.printf("\nConnected users: " + server.getUserNames());
+            writer.println("Connected users: " + server.getUserNames());
         } else {
-            writer.println("\nNo other users connected");
+            writer.println("No other users connected");
         }
     }
  

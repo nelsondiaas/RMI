@@ -23,7 +23,7 @@ public class ChatServer {
             while (true) {
                 
                 Socket socket = serverSocket.accept();
-                System.out.printf("\n\nNew user connected");
+                System.out.println("New user connected");
  
                 UserThread newUser = new UserThread(socket, this);
                 userThreads.add(newUser);
