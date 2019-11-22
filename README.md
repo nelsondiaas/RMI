@@ -16,7 +16,7 @@ $ mvn package
 
 ## Execute project
 ```
-$ java -cp target/[name_package.jar] com.developer.socket.app.[name_class]
+$ java -cp target/[name_package.jar] [package].[name_class]
 
 ```
 
