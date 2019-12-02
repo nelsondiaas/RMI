@@ -1,0 +1,21 @@
+############# INSTALL CONFING ##############
+
+# Downloading and install 
+
+-> https://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+-> https://code.visualstudio.com/docs/languages/java
+
+-> https://maven.apache.org/download.cgi //  Por o maven na raiz do disco local.
+
+# Config Maven
+
+Nome da variavel: MAVEN_HOME
+valor da variavel: C:\maven
+
+Nome da variavel: JAVA_HOME
+valor da variavel: C:\Program Files\Java\jdk-13.0.1  //  Setar onde esta o jdk
+
+Nome da variavel: Path
+valor da veriavel: C:\Program Files\Java\jdk-13.0.1\bin  // Onde executa os codigos binarios do jdk.
+
